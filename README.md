@@ -43,3 +43,10 @@ Para restablecer la demostración, detener el servidor y borrar `pilot.db`. La p
 3. Mover a PostgreSQL con migraciones y cifrado, gestión de secretos y copias de seguridad.
 4. Implementar controles de privacidad, retención de información, seguridad, trazabilidad inmutable y alertas operativas.
 5. Agregar pruebas de integración, seguridad y revisión legal independiente.
+
+
+## Evaluación avanzada (v0.2)
+
+Abrir **Evaluación avanzada** en la barra lateral o visitar `/static/advanced.html`. Incluye diez dimensiones de riesgo ponderadas, señales de alerta independientes del promedio, controles documentales, justificación y evidencia, historial y desglose explicable por factor. Nuevas rutas: `GET /api/advanced/schema`, `POST /api/advanced/clients/{id}` y `GET /api/advanced/clients/{id}`.
+
+El módulo y sus reglas son **ilustrativos**, no un criterio oficial de riesgo ni un sistema certificado. No introducir datos reales: faltan autenticación, protección multiempresa y revisión jurídica de las metodologías.
