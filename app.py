@@ -227,3 +227,7 @@ def export_assessments():
        headers={'Content-Disposition':'attachment; filename="pld_evaluaciones_demo.csv"'})
 
 initialize()
+
+
+from advanced import register_advanced
+register_advanced(app, DB, connection, event)
