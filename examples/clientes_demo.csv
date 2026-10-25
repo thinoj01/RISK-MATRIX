@@ -1,0 +1,7 @@
+external_id,name,customer_type,industry,jurisdiction,notes,identity_verified,beneficial_owner_verified,occupation_verified,source_of_funds_verified,pep_review,expected_monthly_mxn,expected_transactions_month,evidence_reference
+DEMO001,Mariana Vega Ejemplo,Persona física,Servicios profesionales,CDMX,Cliente ficticio de bajo riesgo,si,si,si,si,sin_coincidencia,1500000,2,EXP-DEMO-001
+DEMO002,Desarrollo Nube Azul SA ficticia,Persona moral,Desarrollo inmobiliario,Jalisco,Revisar beneficiario controlador,si,pendiente,si,pendiente,pendiente,3500000,2,EXP-DEMO-002
+DEMO003,Roberto Luna Simulado,Persona física,Comercio,Querétaro,Recursos pendientes de documentar,si,si,si,no,sin_coincidencia,850000,1,EXP-DEMO-003
+DEMO004,Inmobiliaria Horizonte Demo,Persona moral,Inmobiliaria,Nuevo León,Perfil con pagos de terceros,si,si,si,si,sin_coincidencia,2200000,2,EXP-DEMO-004
+DEMO005,Elena Prado Ficticia,Persona física,Consultoría,Yucatán,Expediente completo de ejemplo,si,si,si,si,sin_coincidencia,350000,1,EXP-DEMO-005
+DEMO006,Grupo Arena Ejemplo,Persona moral,Desarrolladora,Quintana Roo,Requiere verificación de identidad y PEP,pendiente,pendiente,si,pendiente,coincidencia_por_verificar,6000000,1,EXP-DEMO-006
