@@ -231,3 +231,6 @@ initialize()
 
 from advanced import register_advanced
 register_advanced(app, DB, connection, event)
+
+from compliance import install as install_compliance
+install_compliance(app, connection, event, now)
