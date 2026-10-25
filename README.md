@@ -50,3 +50,24 @@ Para restablecer la demostración, detener el servidor y borrar `pilot.db`. La p
 Abrir **Evaluación avanzada** en la barra lateral o visitar `/static/advanced.html`. Incluye diez dimensiones de riesgo ponderadas, señales de alerta independientes del promedio, controles documentales, justificación y evidencia, historial y desglose explicable por factor. Nuevas rutas: `GET /api/advanced/schema`, `POST /api/advanced/clients/{id}` y `GET /api/advanced/clients/{id}`.
 
 El módulo y sus reglas son **ilustrativos**, no un criterio oficial de riesgo ni un sistema certificado. No introducir datos reales: faltan autenticación, protección multiempresa y revisión jurídica de las metodologías.
+
+## Módulo importación CSV y revisión de obligaciones (v0.3)
+
+Abrir **Importar CSV / cumplimiento** o `http://127.0.0.1:8000/static/compliance.html`.
+
+1. Importar `examples/clientes_demo.csv` (seis clientes totalmente ficticios).
+2. Importar `examples/operaciones_demo.csv` (ocho operaciones ficticias).
+3. Introducir el **valor oficial diario de UMA** correspondiente al ejercicio; confirmar valor y año en la fuente oficial antes de analizar.
+4. Ver estado de expedientes, pagos de terceros, desviaciones exploratorias de perfil y comparación por **operación individual** contra umbrales expresados en UMA.
+
+API: `GET /api/compliance/rules`, `POST /api/compliance/import/clients`, `POST /api/compliance/import/transactions`, `GET /api/compliance/profiles`, `POST /api/compliance/analyze`.
+
+La importación es **solo para datos sintéticos**. Bloquea identificadores externos repetidos y operaciones duplicadas, valida campos obligatorios, fechas, rangos y vínculos entre archivos. Carga atómica por archivo. Máximo 1000 filas y 2 MB. No sustituye controles empresariales de PII.
+
+### Cobertura y brechas regulatorias
+
+Referencias revisadas: LFPIORPI art. 17 fracciones V, V Bis y XV y art. 18; Reglas de carácter general actualizadas en Acuerdo 115/2026, especialmente arts. 10 Septies, 11, 12, 23 Bis y 41. Fuentes: https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPIORPI.pdf ; https://dof.gob.mx/nota_detalle_popup.php?codigo=5795797 ; https://sppld.sat.gob.mx/pld/interiores/umbrales.html .
+
+Implementado parcialmente: expediente estructurado orientativo, estado de verificación de identidad/beneficiario/origen de fondos, referencias de documentos, operación por cliente y comparación de umbral individual. Las ponderaciones de la matriz avanzada son **hipótesis del prototipo, no prescripciones legales**.
+
+NO IMPLEMENTADO: acumulación reglamentaria por periodo, lógica integral de casos y excepciones, restricciones de efectivo, XML SAT para avisos, validación de PEP y listas oficiales, perfil transaccional mensual normalizado, retención efectiva de 10 años, manual de políticas, auditorías, revisión independiente, seguridad multiempresa, cifrado y autenticación. **El software NO determina de manera concluyente una obligación de aviso y NO realiza presentaciones al SAT.** Requiere análisis legal por actividad, vigencia y caso concreto antes de utilizarse comercialmente.
