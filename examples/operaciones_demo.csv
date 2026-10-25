@@ -1,0 +1,9 @@
+transaction_id,client_external_id,date,activity,amount_mxn,payment_method,third_party,property_type,jurisdiction,notes
+TX-DEMO-001,DEMO001,2026-10-05,V,1200000,Transferencia,no,Departamento,CDMX,Compra ficticia
+TX-DEMO-002,DEMO001,2026-10-20,V,175000,Transferencia,no,Departamento,CDMX,Anticipo simulado
+TX-DEMO-003,DEMO002,2026-10-07,V_BIS,4800000,Transferencia,no,Terreno,Jalisco,Aportación ficticia a desarrollo
+TX-DEMO-004,DEMO003,2026-10-11,V,950000,Transferencia,no,Casa,Querétaro,Origen de fondos pendiente
+TX-DEMO-005,DEMO004,2026-10-12,V,1800000,Transferencia,si,Casa,Nuevo León,Pago de tercero pendiente de justificación
+TX-DEMO-006,DEMO004,2026-10-14,V,1400000,Transferencia,si,Casa,Nuevo León,Segundo pago de tercero
+TX-DEMO-007,DEMO005,2026-10-15,XV,230000,Transferencia,no,Local comercial,Yucatán,Arrendamiento ficticio
+TX-DEMO-008,DEMO006,2026-10-16,V_BIS,7500000,Transferencia,no,Terreno,Quintana Roo,Aportación ficticia grande
